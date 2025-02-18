@@ -1,17 +1,15 @@
 # Twitter Sentiment Analysis: Practice Problem
-
 ## Problem Statement
 
-The objective of this project is to detect hate speech in tweets. Specifically, we classify tweets as either containing hate speech (racist or sexist sentiment) or not.
+The objective of this task is to detect hate speech in tweets. For simplicity, a tweet is considered to contain hate speech if it has racist or sexist sentiment associated with it. The task is to classify tweets into two categories: those that are racist or sexist and those that are not.
 
-Formally, given a training sample of tweets and labels:
-- Label `1` denotes the tweet is racist/sexist.
-- Label `0` denotes the tweet is not racist/sexist.
+Formally, given a training dataset of tweets and their corresponding labels:
+- Label `1` indicates the tweet is racist or sexist.
+- Label `0` indicates the tweet is not racist or sexist.
 
-Your task is to predict the labels on the test dataset.
+The goal is to build a model that can accurately predict the labels for a test dataset of unlabeled tweets. 
 
-You can access the problem statement and the data [here](https://datahack.analyticsvidhya.com/contest/practice-problem-twitter-sentiment-analysis/).
-
+This is an imbalanced classification problem, as the majority of tweets in the training data are non-hateful, with only a small percentage containing hate speech. Therefore, models need to account for this imbalance while being evaluated based on metrics like F1-score to ensure they perform well on the minority class (hate speech).
 ## Table of Contents
 
 - [Data Exploration](#data-exploration)

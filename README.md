@@ -30,7 +30,7 @@ You can access the problem statement and the data [here](https://datahack.analyt
 
 The following histogram shows the distribution of tweet lengths in both the training and test datasets. The distributions are quite similar, indicating that the datasets are consistent in terms of tweet length.
 
-![Tweet Length Distribution](tweet_length_distribution.png)
+![Tweet Length Distribution](results/tweet_length_distribution.png)
 
 ### Label Distribution
 
@@ -60,20 +60,20 @@ We performed several steps to clean and preprocess the text data:
 Word clouds help visualize the most frequent words in the tweets. Larger words indicate higher frequency.
 
 - **Non-Racist/Sexist Tweets Word Cloud**:
-  ![Word Cloud Non-Racist](wordcloud_non_racist.png)
+  ![Word Cloud Non-Racist](results/wordcloud_non_racist.png)
 
 - **Racist/Sexist Tweets Word Cloud**:
-  ![Word Cloud Racist](wordcloud_racist.png)
+  ![Word Cloud Racist](results/wordcloud_racist.png)
 
 ### Top Hashtags
 
 Hashtags provide insights into the common topics discussed in the tweets.
 
 - **Top Hashtags in Non-Racist/Sexist Tweets**:
-  ![Top Hashtags Non-Racist](top_hashtags_non_racist.png)
+  ![Top Hashtags Non-Racist](results/top_hashtags_non_racist.png)
 
 - **Top Hashtags in Racist/Sexist Tweets**:
-  ![Top Hashtags Racist](top_hashtags_racist.png)
+  ![Top Hashtags Racist](results/top_hashtags_racist.png)
 
 ---
 
@@ -126,25 +126,24 @@ We fine-tuned the XGBoost model by optimizing the following hyperparameters:
 ## Visualizations
 
 #### Tweet Length Distribution
-![Tweet Length Distribution](tweet_length_distribution.png)
+![Tweet Length Distribution](results/tweet_length_distribution.png)
 
 #### Word Clouds
 - **Non-Racist/Sexist Tweets Word Cloud**:
-  ![Word Cloud Non-Racist](wordcloud_non_racist.png)
+  ![Word Cloud Non-Racist](results/wordcloud_non_racist.png)
 
 - **Racist/Sexist Tweets Word Cloud**:
-  ![Word Cloud Racist](wordcloud_racist.png)
+  ![Word Cloud Racist](results/wordcloud_racist.png)
 
 #### Top Hashtags
 - **Top Hashtags in Non-Racist/Sexist Tweets**:
-  ![Top Hashtags Non-Racist](top_hashtags_non_racist.png)
+  ![Top Hashtags Non-Racist](results/top_hashtags_non_racist.png)
 
 - **Top Hashtags in Racist/Sexist Tweets**:
-  ![Top Hashtags Racist](top_hashtags_racist.png)
+  ![Top Hashtags Racist](results/top_hashtags_racist.png)
 
 ---
 
-## Conclusion
 
 This project demonstrates the process of building and evaluating machine learning models for detecting hate speech in tweets. The visualizations provide insights into the common words and hashtags used in different categories of tweets. The Logistic Regression model performed better compared to the initial XGBoost model on the validation set, but further tuning may improve results.
 
